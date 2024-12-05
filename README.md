@@ -23,7 +23,20 @@ This file demonstrates the process of embedding and detecting watermarks in imag
 
 ### **III. Normalized Cross-Correlation Function:**
 1. Formula
-![Equation]("C:\Users\Hoang Ha\Pictures\Screenshots\oop.png")
+$$
+\text{NCC} = \left| \frac{\frac{1}{N} \sum \left( (I_1 - \mu_{I_1}) \cdot (I_2 - \mu_{I_2}) \right)}{\sigma_{I_1} \cdot \sigma_{I_2}} \right|
+$$
+2. Where:
+- $ I_1 $ and $ I_2 $: The matrix of two images being compared.
+- $ \mu_{I_1} $ and $ \mu_{I_2} $: The mean pixel intensity of $ I_1 $ and $ I_2 $.
+$$
+\mu_{I_1} = \frac{1}{N} \sum I_1 \quad \text{and} \quad \mu_{I_2} = \frac{1}{N} \sum I_2
+$$
+- $ \sigma_{I_1} $ and $ \sigma_{I_2} $: The standard deviations of $ I_1 $ and $ I_2 $, respectively.
+$$
+\sigma_{I_1} = \sqrt{\frac{1}{N} \sum \left( I_1 - \mu_{I_1} \right)^2} \quad \text{and} \quad \sigma_{I_2} = \sqrt{\frac{1}{N} \sum \left( I_2 - \mu_{I_2} \right)^2}
+$$
+- $ N $: The total number of pixels in the image.
 
 #### This function calculates the **absolute value of the normalized cross-correlation**, which measures the similarity between two images while normalizing for differences in brightness and contrast.
 
