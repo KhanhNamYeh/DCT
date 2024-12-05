@@ -1,9 +1,3 @@
----
-title: "Watermark Embedding and Detection in Images Using DCT"
-author: "Group 13"
-date: "2024-10-12"
----
-
 # Watermark Embedding, Attacking and Detecting in Images Using DCT
 
 This file demonstrates the process of embedding and detecting watermarks in images using Discrete Cosine Transform (DCT). The workflow includes functions for embedding a watermark, adding noise to the watermarked image, and detecting the watermark from both the noisy and original watermarked images.
