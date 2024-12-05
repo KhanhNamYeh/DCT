@@ -1,8 +1,3 @@
----
-title: "Watermark Embedding and Detection in Images Using DCT"
-author: "Group 13"
-date: "2024-10-12"
----
 
 # Watermark Embedding, Attacking and Detecting in Images Using DCT
 
